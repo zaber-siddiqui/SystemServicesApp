@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "systemservices",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zaber-siddiqui/SystemServices.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "19e4f1894fb7602c316768cc75b299f2b4e4010f"
+      }
+    }
+  ],
+  "version" : 2
+}

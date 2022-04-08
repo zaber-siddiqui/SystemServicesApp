@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="SytemInfoTableCell" customModule="DeviceInfoSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tu8-Kj-wUG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6md-RU-3mf">
+                                <rect key="frame" x="10" y="5" width="300" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oez-Re-5Vo">
+                                <rect key="frame" x="10" y="31.5" width="300" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oez-Re-5Vo" firstAttribute="leading" secondItem="6md-RU-3mf" secondAttribute="leading" id="For-tb-Nb0"/>
+                            <constraint firstItem="oez-Re-5Vo" firstAttribute="top" secondItem="6md-RU-3mf" secondAttribute="bottom" constant="5" id="KGN-Lq-srw"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oez-Re-5Vo" secondAttribute="bottom" constant="5" id="Q3k-fr-HMP"/>
+                            <constraint firstItem="6md-RU-3mf" firstAttribute="leading" secondItem="Tu8-Kj-wUG" secondAttribute="leading" constant="10" id="SJO-OW-Kzl"/>
+                            <constraint firstItem="6md-RU-3mf" firstAttribute="top" secondItem="Tu8-Kj-wUG" secondAttribute="top" constant="5" id="ZPe-sk-9F6"/>
+                            <constraint firstItem="oez-Re-5Vo" firstAttribute="trailing" secondItem="6md-RU-3mf" secondAttribute="trailing" id="ncr-CV-9Dc"/>
+                            <constraint firstAttribute="trailing" secondItem="6md-RU-3mf" secondAttribute="trailing" constant="10" id="vOt-se-t8h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Tu8-Kj-wUG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0di-TI-bVN"/>
+                    <constraint firstItem="Tu8-Kj-wUG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0tW-r3-EBK"/>
+                    <constraint firstAttribute="bottom" secondItem="Tu8-Kj-wUG" secondAttribute="bottom" id="6Qj-yq-SZd"/>
+                    <constraint firstAttribute="trailing" secondItem="Tu8-Kj-wUG" secondAttribute="trailing" id="a3f-R1-gLg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="infoDescLabel" destination="oez-Re-5Vo" id="MKz-ar-BAV"/>
+                <outlet property="infoTitleLabel" destination="6md-RU-3mf" id="bCR-hr-RlT"/>
+            </connections>
+            <point key="canvasLocation" x="2.8985507246376816" y="43.526785714285715"/>
+        </tableViewCell>
+    </objects>
+</document>
